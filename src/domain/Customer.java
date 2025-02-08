@@ -16,4 +16,25 @@ public class Customer {
         System.out.println("New customer: " + isNew);
         System.out.println("Total purchases are: " + total);
     }
-}
+    public boolean setID(int ID) {
+        if (ID > 0) {
+            this.ID = ID;
+            return true;
+        }
+            return false;
+        }
+
+        public void setStatus(boolean isNew) {
+            this.isNew = isNew;
+        }
+
+        public boolean setTotal(double total) {
+            if (total >= 0) {
+                this.total = total;
+                return true;
+            }
+               return false;
+            }
+
+ }
+    
